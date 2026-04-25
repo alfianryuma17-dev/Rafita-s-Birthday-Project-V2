@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  background: #fdf4f7;
+  display: flex;
+  justify-content: center;
+}
+
+/* container utama */
+#gameContainer {
+  width: 320px;
+  text-align: center;
+}
+
+/* canvas */
+#gameCanvas {
+  display: block;
+  margin: 0 auto;
+}
+
+/* controls */
+#controls {
+  margin-top: 10px;
+}
+
+/* tombol */
+#controls button {
+  font-size: 20px;
+  padding: 10px 14px;
+  margin: 4px;
+  border-radius: 10px;
+  border: none;
+  background: #f8cdd4;
+}
