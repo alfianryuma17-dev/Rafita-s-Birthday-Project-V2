@@ -117,35 +117,39 @@ window.addEventListener("click", () => {
 
 // ===== MOVE =====
 function move(key) {
-  
-  // 🎬 TEKAN E → MASUK VIDEO
-if (key === "e" || key === "E") {
-  if (gardenDialogPlayed && !showDialog) {
-    scene = "video"; // 🔥 pindah ke scene video
-    return;
+
+  // 🎬 VIDEO
+  if (key === "e" || key === "E") {
+    if (gardenDialogPlayed && !showDialog) {
+      scene = "video";
+      return;
+    }
   }
-}
 
   if (showProlog) return;
 
   const speed = 10;
 
-  if (key === "ArrowUp") {
+  // ⬆️ ATAS
+  if (key === "ArrowUp" || key === "up") {
     player.y -= speed;
     facing = "up";
   }
 
-  if (key === "ArrowDown") {
+  // ⬇️ BAWAH
+  if (key === "ArrowDown" || key === "down") {
     player.y += speed;
     facing = "idle";
   }
 
-  if (key === "ArrowLeft") {
+  // ⬅️ KIRI
+  if (key === "ArrowLeft" || key === "left") {
     player.x -= speed;
     facing = "left";
   }
 
-  if (key === "ArrowRight") {
+  // ➡️ KANAN
+  if (key === "ArrowRight" || key === "right") {
     player.x += speed;
     facing = "right";
   }
